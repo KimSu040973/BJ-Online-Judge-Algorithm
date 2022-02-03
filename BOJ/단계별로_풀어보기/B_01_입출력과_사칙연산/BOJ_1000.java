@@ -54,4 +54,5 @@ public class Main {
 		System.out.println(a+b);
     }
 }
-[Integer.parseInt(String타입의 값)] (https://colossus-java-practice.tistory.com/32)
+
+// [Integer.parseInt(String타입의 값)](https://colossus-java-practice.tistory.com/32)
