@@ -8,6 +8,7 @@
 
 */
 // WAY1 메모리 17704kb 시간 212ms
+// Scanner 를 사용하여 in.nextInt() 로 정수 입력받는 방법
 import java.util.Scanner;
  
 public class Main {
@@ -24,9 +25,13 @@ public class Main {
 	}
 }
 
+
 // WAY2 메모리 14152kb 시간 124ms
-//BufferedReader 을 쓰는 방식
-//st.nextToken() 은 문자열을 반환하니 Integer.parseInt()로 int 형으로 변환시켜준다.
+// BufferedReader 을 쓰는 방식
+// StringTokenizer 클래스를 이용하여 분리해주는 방법
+// 단순 규칙으로 문자열을 분리를 위해  StringTokenizer( "문자열" , 구분자 ); **구분자: " " or "\n"
+// 구분된 변수를 꺼낼 때는 차례대로 nextToken(); 을 해주면 문자열을 반환
+// 반환된 문자열을 Integer.parseInt()로 int 형으로 변환
 import java.util.*;
 import java.io.*;
  
