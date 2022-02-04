@@ -20,7 +20,7 @@ public class Main {
 		
 		System.out.println(A-B);
  
-		in.close();//리소스 누수 관련으로 적극 권장이라고 한다...
+		in.close();//리소스 누수 관련으로 적극 권장이라고 한다..
 	}
 }
 
@@ -35,15 +35,14 @@ public class Main {
   
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));//InputStreamReader라는 빨대로 입력을 문자로 읽을 준비
     
-    String str = br.readLine(); // 문자로 한번에 읽기    
-    StringTokenizer st = new StringTokenizer(str," "); //한번에 읽은 문자 " " 로 구분
-    //==  StringTokenizer st = new StringTokenizer(br.readLine()," "); 
+    		String str = br.readLine(); // 문자로 한번에 읽기    
+   		StringTokenizer st = new StringTokenizer(str," "); //한번에 읽은 문자 " " 로 구분
+   		//==  StringTokenizer st = new StringTokenizer(br.readLine()," "); 
     
-    int A = Integer.parseInt(st.nextToken()); //으로 차례로 정수로 초기화
-    int B = Integer.parseInt(st.nextToken());
+  		int A = Integer.parseInt(st.nextToken()); //으로 차례로 정수로 초기화
+ 		int B = Integer.parseInt(st.nextToken());
     
-    System.out.println(A-B);
- 
+ 		System.out.println(A-B); 
 	}
 }
 //[Integer.parseInt(String타입의 값)](https://colossus-java-practice.tistory.com/32)
