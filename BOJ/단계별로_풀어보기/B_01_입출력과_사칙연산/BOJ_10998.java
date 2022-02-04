@@ -8,7 +8,7 @@
 
 */
 
-// Way1 메모리 17704 시간	208
+// Way1 메모리 17704kb 시간 208ms
 // Scanner 를 사용해 s.nextInt()로 정수 입력받아 연산하는 방법
 import java.util.*;
 public class Main{
@@ -23,10 +23,12 @@ public class Main{
 
 
 
-// Way2 메모리 14256 시간	124
+// Way2 메모리 14256kb 시간	124ms
 // BufferedReader 을 쓰는 방식
 // StringTokenizer 클래스를 이용하여 분리해주는 방법
-// st.nextToken() 은 문자열을 반환하니 Integer.parseInt()로 int 형으로 변환
+// 단순 규칙으로 문자열을 분리를 위해  StringTokenizer( "문자열" , 구분자 ); **구분자: " " or "\n"
+// 구분된 변수를 꺼낼 때는 차례대로 nextToken(); 을 해주면 문자열을 반환
+// 반환된 문자열을 Integer.parseInt()로 int 형으로 변환
 import java.util.*;
 import java.io.*;
 public class Main{
@@ -41,3 +43,5 @@ public class Main{
         System.out.println(a*b);
     } 
 }
+
+
