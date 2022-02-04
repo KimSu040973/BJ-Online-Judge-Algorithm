@@ -40,13 +40,15 @@ public class Main{
 /*
 다만 조건문을 좀 더 획기적으로 줄일 수 있는 방법이 있다!
 이름하여 "삼항연산자" 다. 
-c = (a>b) ? True일 경우 값 : False일 경우 값 ;(ex> boolean c = (a>b) ? true : false ;)
+변수 = (조건문) ? (true 일 때의 연산) : (false 일 때의 연산) ; (ex> boolean c = (a>b) ? true : false ;)
 
 아래처럼 중첩하여 사용 가능하다.
 System.out.println((a>b) ? ">" : ((a<b) ? "<" : "==" ));
 메모리 17720 시간	204 
 (메모리는 저하되지만 시간은 단축..근데 별차이 안나기에 편하고 가독성 좋은것으로 선택하여 사용할 것)
 **/
+
+
 
 // WAY2 메모리 14152kb 시간 124ms
 // BufferedReader 을 쓰는 방식
