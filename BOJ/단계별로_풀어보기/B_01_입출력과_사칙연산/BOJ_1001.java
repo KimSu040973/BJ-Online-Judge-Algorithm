@@ -7,7 +7,7 @@
 첫째 줄에 A-B를 출력한다.
 
 */
-// WAY1 17704	212
+// WAY1 메모리 17704kb 시간 212ms
 import java.util.Scanner;
  
 public class Main {
@@ -24,7 +24,7 @@ public class Main {
 	}
 }
 
-// WAY2 	14152	124
+// WAY2 메모리 14152kb 시간 124ms
 //BufferedReader 을 쓰는 방식
 //st.nextToken() 은 문자열을 반환하니 Integer.parseInt()로 int 형으로 변환시켜준다.
 import java.util.*;
