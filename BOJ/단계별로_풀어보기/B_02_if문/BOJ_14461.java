@@ -19,3 +19,24 @@ Quadrant 3          Quadrant 4
 점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.
 
 **/
+//Scanner 메모리 17680kb 시간 204ms
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int x= s.nextInt();
+        int y= s.nextInt();
+        if(x>0 && y>0){
+                System.out.println(1);
+            }
+        else if(x<0 && y>0) {
+                System.out.println(2);
+        }
+        else if(x<0 && y<0) {
+                System.out.println(3);
+        }
+        else if(x>0 && y<0) {
+                System.out.println(4);
+        }     
+    }
+}
