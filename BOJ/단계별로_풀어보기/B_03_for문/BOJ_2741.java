@@ -15,7 +15,7 @@ class Main{
         Scanner s = new Scanner(System.in); 
         int N =s.nextInt(); //정수 입력
         for(int i=1 ; i<=N ; i++){
-            System.out.println(i);
+            System.out.println(i); //1부터 N까지 한 줄에 하나씩 출력
         }
     }
 }
@@ -26,9 +26,9 @@ import java.io.*;
 class Main{
     public static void main(String[] args) throws IOException{
         BufferedReader s = new BufferedReader(new InputStreamReader(System.in)); 
-        int N =Integer.parseInt(s.readLine());
+        int N =Integer.parseInt(s.readLine()); //정수 입력
         for(int i=1 ; i<=N ; i++){
-            System.out.println(i);
+            System.out.println(i);//1부터 N까지 한 줄에 하나씩 출력
         }
     }
 }
