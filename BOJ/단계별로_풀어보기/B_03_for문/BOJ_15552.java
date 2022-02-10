@@ -1,7 +1,7 @@
-
 /*
 문제
-본격적으로 for문 문제를 풀기 전에 주의해야 할 점이 있다. 입출력 방식이 느리면 여러 줄을 입력받거나 출력할 때 시간초과가 날 수 있다.
+본격적으로 for문 문제를 풀기 전에 주의해야 할 점이 있다. 
+입출력 방식이 느리면 여러 줄을 입력받거나 출력할 때 시간초과가 날 수 있다.
 
 Java를 사용하고 있다면, Scanner와 System.out.println 대신 BufferedReader와 BufferedWriter를 사용할 수 있다. 
 BufferedWriter.flush는 맨 마지막에 한 번만 하면 된다.
@@ -15,14 +15,13 @@ BufferedWriter.flush는 맨 마지막에 한 번만 하면 된다.
 출력
 각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
 
-[scanner & System.out.println() 사용 X]
-모든 테스트케이스가 1.5초 즉, 1500ms 내의 시간에서 풀려야 한다.
-문제에서 보면 최대 100만개의 테스트 케이스가 주어진다. 
-케이스가 늘어나면 늘어날 수록 문제점이 생기는데 바로 System.out.println()의 호출횟수 또한 증가한다는 것이다.
-그래서 아무리 BufferedReader 을 써줬어도 System.out.println() 을 각 테스트 케이스마다 해주면 시간초과가 되어버린다.
+[Scanner & System.out.println() 사용 X]
+최대 100만개의 테스트 케이스가 1.5초 즉, 1500ms 내의 시간에서 풀려야 한다. . 
+케이스가 늘어나면 늘어날 수록 System.out.println()의 호출횟수 또한 증가한다는 것이다.
+BufferedReader로 입력받아도 System.out.println()로 각 테스트 케이스마다 출력하면 시간초과가 되어버린다.
 **/
 
-// Way1  [ BufferedReader & BufferedWriter 사용 ]    kb     ms
+// Way1  [ BufferedReader & BufferedWriter 사용 ]     237412   kb  908   ms
 // StringBuilder 로 하나의 문자열로 계속 연결시킨 뒤 가장 마지막에 연결된 하나의 문자열을 출력시키는 방법.
 
 import java.io.*;
@@ -43,12 +42,11 @@ public class Main {
 		}
 		br.close();   
 		bw.flush();
-		bw.close();
- 
+		bw.close(); 
 	}
 }
 
-// Way2 [ BufferedReader & StringBuilder 사용 ]  kb     ms 
+// Way2 [ BufferedReader & StringBuilder 사용 ]    221540	 kb   812  ms 
 // BufferedWriter 로 버퍼에 담아둬았다가 한 번에 데이터를 보내는 방법
 
 import java.io.*;
@@ -65,17 +63,16 @@ public class Main {
         
 		for (int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine()," "); //입력
-			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())).append('\n');/출력을 위한 입력값 더하기
+			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())).append('\n');//출력을 위한 입력값 더하기
 		}
 		br.close();
  
 		System.out.println(sb); //한번에 출력
- 
 	}
 }
 
 
-// way3 [BufferedReader & BufferedWriter 와 split 사용]
+// way3 [BufferedReader & BufferedWriter 와 split 사용]  	301224 kb	1080 ms
 // readLine() 으로 문자열을 한번에 입력받고 String.split() 메소드로 " " 구분자 기준으로 분리
 // 연산 내용을 BuffreedWriter.write() 안에 넣어 출력
 import java.io.*;
@@ -87,7 +84,7 @@ class Main{
         int a,b;
         for(int i=1 ; i<=N ; i++){
             String s = scan.readLine(); //입력
-            a = Integer.parseInt(s.split(" ")[0]); //입력값 변환
+            a = Integer.parseInt(s.split(" ")[0]); // 입력값 분리 및 변환 
             b = Integer.parseInt(s.split(" ")[1]);
             print.write(a+b+"\n");  //출력
         }
