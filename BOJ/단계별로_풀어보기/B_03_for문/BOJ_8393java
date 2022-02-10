@@ -1,1 +1,47 @@
 
+/*
+문제
+n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
+
+입력
+첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.
+
+출력
+1부터 n까지 합을 출력한다.
+**/
+// WAY1 (Scanner + 수학연산)            메모리 17616kb 시간 204ms
+// Scanner 를 사용하여 입력값을 in.nextInt() 로 정수 입력받는 방법
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt();
+        int sum=0;
+        for(int i=1 ; i<=N ; i++){
+            sum+=i;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+// WAY2 ( BufferedReader + 수학연산 )    메모리 	14220	kb 시간 120ms
+// BufferedReader 를 쓰는 방식
+// Ex 입력을 보면 " " 로 구분 X == Stringtokenizer 필요 X 
+// 두 정수 입력값은 readLine()를 이용하여 문자열로 입력받아
+// Integer.parseInt()로 int 형으로 변환
+
+import java.io.*;
+public class Main{
+    public static void main(String[] args)throws IOException{
+        BufferedReader s = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(s.readLine());
+        int sum=0;
+        for(int i=1 ; i<=N ; i++){
+            sum+=i;
+        }
+        System.out.println(sum);
+    }
+}
+
+
