@@ -21,7 +21,7 @@ class Main{
 }
 
 
-//Way2 [BufferedReader 사용] 31656	kb976ms
+//Way2 [BufferedReader 사용]   31656kb   976ms
 import java.io.*;
 class Main{
     public static void main(String[] args) throws IOException{
