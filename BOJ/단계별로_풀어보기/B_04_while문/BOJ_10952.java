@@ -32,6 +32,7 @@ class Main{
 }
 
 
+
 // Way 2 ( BufferedReader + 수학연산) 메모리 14096 kb  시간	128 ms
 // BufferedReader 을 쓰는 방식
 // StringTokenizer 클래스를 이용하여 분리해주는 방법
@@ -76,6 +77,9 @@ class Main{
         }
         System.out.println(sb);
 */
+
+
+
 
 // Way 3 ( BufferedReader + StringBuilder + charAt) 메모리 14232kb  시간	120ms
 // BufferedReader 로 입력 받아 StringBuilder 로 출력하는 방법
