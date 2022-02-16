@@ -60,6 +60,8 @@ class Main{
 // BufferedReader 로 입력 받아 StringBuilder 로 출력하는 방법
 // (StringBuilder.append(): 당장 출력한 데이터는 많지 않아 시간 단축이 눈에 띄지 않아도 한번에 출력할 수 있는 방법 익히기)
 // 테스트 케이스의 개수 N를 문자열로 입력받아 Integer.parseInt()로 int 형으로 변환
+// charAt(): String으로 저장된 문자열 중에서 한 글자만 선택해서 char타입으로 변환
+
 /*
 입력에서 A 와 B 의 범위는 1~9 사이다.
 그럼 입력받은 문자열의 배열 위치는 아래처럼 고정된다.
