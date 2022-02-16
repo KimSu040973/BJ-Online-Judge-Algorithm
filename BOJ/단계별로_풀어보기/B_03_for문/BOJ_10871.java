@@ -54,7 +54,7 @@ class Main{
         
 */
 
-// WAY2 메모리( BufferedReader + StringBuilder )  메모리 16388kb 시간 180ms
+// WAY2 메모리( BufferedReader + StringBuilder )  메모리 16232kb 시간 200ms
 // BufferedReader 을 쓰는 방식
 // StringTokenizer 클래스를 이용하여 분리해주는 방법
 // 단순 규칙으로 문자열을 분리를 위해  StringTokenizer( "문자열" , 구분자 ); **구분자: " " or "\n"
