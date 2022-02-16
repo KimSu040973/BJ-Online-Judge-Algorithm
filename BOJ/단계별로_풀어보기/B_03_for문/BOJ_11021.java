@@ -27,11 +27,14 @@ class Main{
     }
 }
 
+
 // Way2 [ BufferedReader & StringBuilder & CharAt 사용 ]   14164	kb     132ms
 // BufferedReader 로 입력받아 StringBuilder로 한번에 출력하는 방법
 // A와 B 입력값 법위가 정해져 있기때문에 입력값 및 공백 위치 알 수 있다.
 // charAt()은 문자를 아스키코드 정수로 출력한다.
+// charAt(): String으로 저장된 문자열 중에서 한 글자만 선택해서 char타입으로 변환
 // 원하는 정수 출력을 위해 연산(-48 or -"0")이 필요하다.
+
 import java.io.*;
 import java.util.*;
 class Main{
@@ -49,3 +52,5 @@ class Main{
         System.out.println(sb);
     }
 }
+
+
