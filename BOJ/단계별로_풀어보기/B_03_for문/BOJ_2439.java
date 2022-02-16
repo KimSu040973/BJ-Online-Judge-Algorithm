@@ -43,9 +43,27 @@ class Main{
 
 
 
-// WAY2 ( BufferedReader + 수학연산 )    메모리 15000kb 시간 216ms
+// WAY2 ( BufferedReader + 수학연산 )    메모리 16076kb 시간 260ms
 // BufferedReader 를 쓰는 방식
 // Ex 입력을 보면 " " 로 구분 X == Stringtokenizer 필요 X 
 // readLine()를 이용하여 문자열로 입력받아 Integer.parseInt()로 int 형으로 변환
+import java.io.*;
+class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+        int N = Integer.parseInt(br.readLine());
+        
+        for(int i = 1 ; i <= N ; i++){
+	        for(int j = N ; j > 0 ; j--){
+                if(j > i) System.out.print(" ");
+                else System.out.print("*");
+            } 
+            System.out.println();
+        }
+    }
+}
+
+
+
 
 
